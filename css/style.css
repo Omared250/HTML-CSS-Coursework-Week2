@@ -10,7 +10,7 @@ body {
 
 * {
     /*border: 1px solid black;
-    this is to help you to reconice the border of each element*/
+    this is to help you to recognize the border of each element*/
     font-weight: 400;
 }
 
@@ -33,6 +33,12 @@ body {
 
 .nav-bar img:first-of-type {
     width: 25px;
+}
+
+@media (min-width: 1440px) {
+    .nav-bar img:last-of-type {
+        visibility: hidden;
+    }
 }
 
 .nav-bar > ul {
@@ -58,6 +64,18 @@ body {
 
     .nav-bar > ul > li > a:hover {
         color: salmon;
+    }
+}
+
+@media (min-width: 1440px) {
+    .nav-bar > ul {
+        margin-left: 0;
+        justify-content: flex-end;
+    }
+
+    .nav-bar > ul > li > a {
+        font-size: 20px;
+        margin-right: 3em;
     }
 }
 
@@ -120,7 +138,6 @@ body {
         height: 80vh;
         grid-template-columns: repeat(3, 35%);
         grid-template-rows: 20% 80%;
-        background-color: green;
     }
 
     .devices {
@@ -200,5 +217,3 @@ body {
     width: 25px;
     border-radius: 50px;
 }
-
-
