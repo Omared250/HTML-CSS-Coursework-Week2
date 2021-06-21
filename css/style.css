@@ -10,6 +10,7 @@ body {
 
 * {
     border: 1px solid black;
+    font-weight: 100;
 }
 
 /*--------inidivual setup-----------*/
@@ -56,13 +57,11 @@ body {
 .introduction-area > h2 {
     margin-bottom: 0.5em;
     font-size: 45px;
-    font-weight: 100;
 }
 
 .introduction-area > p {
     margin-top: 0;
     width: 70%;
-    font-weight: 100;
     font-size: 25px;
 }
 
@@ -71,6 +70,37 @@ body {
     font-size: 18px;
     background-color: coral;
     border-radius: 5px;
+}
+
+/*------------------everyone-needs-karma area setup----------------*/
+
+.everyone-needs-karma {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto-fill);
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.everyone-needs-karma > h2 {
+    font-size: 30px;
+}
+
+.everyone-needs-karma img {
+    width: 110px;
+}
+
+.devices, .coffe, .gas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.devices, .coffe, .gas > p {
+    font-size: 20px;
+    margin-bottom: 1em;
 }
 
 footer div > img:last-of-type {
