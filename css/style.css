@@ -18,10 +18,14 @@ body {
 
 .nav-bar {
     display: flex;
-    height: 3em;
+    height: 4em;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-bar img {
+    margin: 1em;
 }
 
 .nav-bar img:first-of-type {
@@ -41,14 +45,33 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-align: center;
     background-image: url(../img/first-background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100vh;
 }
 
+.introduction-area > h2 {
+    margin-bottom: 0.5em;
+    font-size: 45px;
+    font-weight: 100;
+}
 
+.introduction-area > p {
+    margin-top: 0;
+    width: 70%;
+    font-weight: 100;
+    font-size: 25px;
+}
 
+.introduction-area > button {
+    padding: 0.8em 1em;
+    font-size: 18px;
+    background-color: coral;
+    border-radius: 5px;
+}
 
 footer div > img:last-of-type {
     width: 25px;
