@@ -27,6 +27,7 @@ body {
 
 .nav-bar img {
     margin: 1em;
+    cursor: pointer;
 }
 
 .nav-bar img:first-of-type {
@@ -35,6 +36,28 @@ body {
 
 .nav-bar > ul {
     visibility: hidden;
+}
+
+@media (min-width: 768px) {
+    .nav-bar > ul {
+        display: flex;
+        width: 80%;
+        margin-left: -3em;
+        visibility: initial;
+        list-style: none;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .nav-bar > ul > li > a {
+        text-decoration: none;
+        color: gray;
+    }
+
+    .nav-bar > ul > li > a:hover {
+        color: salmon;
+    }
 }
 
 /*------------first section setup-----------------*/
@@ -55,6 +78,7 @@ body {
 }
 
 .introduction-area > h2 {
+    width: 85%;
     margin-bottom: 0.5em;
     font-size: 45px;
 }
