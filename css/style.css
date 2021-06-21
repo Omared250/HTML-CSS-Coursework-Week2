@@ -9,8 +9,8 @@ body {
 /*----- general setup-----------*/
 
 * {
-    border: 1px solid black;
-    font-weight: 100;
+    /*border: 1px solid black;*/
+    font-weight: 400;
 }
 
 /*--------inidivual setup-----------*/
@@ -103,8 +103,26 @@ body {
     margin-bottom: 1em;
 }
 
-footer div > img:last-of-type {
+/*---------------footer area----------------*/
+
+.contact-area {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    border-top: 1px solid gray;
+}
+
+.contact-area > div > img {
+    padding: 0.5em;
+    margin-right: 0.5em;
+    border: 1px solid gray;
     width: 25px;
+    border-radius: 50px;
 }
 
 
